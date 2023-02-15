@@ -5,11 +5,10 @@ const port = 3000;
 
 // View engine setup
 app.set('view engine', 'ejs');
-
 app.use(express.static('src'))
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.render('tutorialLighting');
 });
 
 
