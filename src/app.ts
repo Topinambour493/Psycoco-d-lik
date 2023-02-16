@@ -8,12 +8,15 @@ app.set('view engine', 'ejs');
 app.use(express.static('src'))
 
 app.get('/', (req, res) => {
-  res.render('tutorialLighting');
+  res.render('cube');
 });
 
+app.get('/cube', function(req, res){
+  res.render('cube');
+});
 
-app.get('/hello', function(req, res){
-  res.render('hello');
+app.get('/sphere', function(req, res){
+  res.render('sphere');
 });
 
 app.listen(port, () => {
