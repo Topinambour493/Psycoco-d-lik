@@ -15,10 +15,6 @@ app.get('/cube', function(req, res){
   res.render('cube');
 });
 
-app.get('/cube2', function(req, res){
-  res.render('cube2');
-});
-
 app.get('/sphere', function(req, res){
   res.render('sphere');
 });
